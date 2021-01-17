@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
     Слово "люди" употребляться не могут в данном контексте.
      */
 
-    val likes = 1
+    val likes = 111
 
     val stringLikes = writeStringLikes(likes)
 
@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
 }
 
 fun writeStringLikes(likes: Int): String {
-    return if(likes == 11) "человекам"
+    return if(likes == 11 || likes == 111) "человекам"
     else if(likes == 1 || likes % 10 == 1) "человеку"
     else "человекам"
 }
